@@ -1,0 +1,18 @@
+.container {
+    margin: 30px 40px;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .control {
+    margin: 20px
+  }
+  
+  table {
+    width: 100%;
+  }
+  
+  th {
+    height: 70px;
+  }

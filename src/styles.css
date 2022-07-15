@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.customIconSize {
+    font-size: 50px;
+    height: 50px ;
+    width: 50px ;
+}
+
+.inputfield{width: 100%;
+                  padding: 12px;
+                  margin: 8px 0;
+                  display: inline-block;
+                  border: 1px solid #ccc;
+                  box-sizing: border-box;
+                }
+ .matbutton{
+  margin-right: 5px;
+   border:none;
+   background-color: azure;
+   
+ }   
+ 
+ .responsive-width {
+  font-size: 3vw;
+}

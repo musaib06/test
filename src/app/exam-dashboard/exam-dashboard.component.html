@@ -1,0 +1,48 @@
+<h1>
+
+    Here is the Quiz infomarion
+
+    <div class="container mt-sm-5 my-5">
+        <div class="question ml-sm-5 pl-sm-5 pt-2">
+            <form #dataForm="ngForm" *ngFor="let element of quiz" (ngSubmit)="submitResponse(element)">
+                <div class="py-2 h5 card px-3 bg-success" id="options">
+
+                    <b name="question">Q.no- {{element.id}} {{element.question }} </b>
+                </div>
+                <div class="ml-md-3 ml-sm-3 pl-md-5 pt-sm-0 pt-3" id="options">
+                    <label class="options"><b>{{element.answer }}</b>
+                        <input type="radio" name="answer" value="{{element.answer}}" [(ngModel)]="ans">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="options"><b>{{element.option2 }}</b>
+                        <input type="radio" name="option2" value="{{element.option2}}" [(ngModel)]='ans'>
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="options"><b>{{element.option3 }}</b>
+
+                        <input type="radio" name="option3" value="{{element.option3}}" [(ngModel)]='ans'>
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="options"><b>{{element.option4 }}</b>
+
+                        <input type="radio" name="option4" value="{{element.option4 }}" [(ngModel)]='ans'>
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <!-- <button type="submit" class="btn btn-primary float-right" >Nextsubmit </button> -->
+<h5>
+                    <button class="btn btn-primary float-right" type="submit">Next</button>
+                    <button class="btn btn-danger">Previous</button></h5>
+                </div>
+            </form>
+        </div>
+        <!-- <h5 class="d-flex align-items-center pt-3 d-flex justify-content-around">
+            <button class="btn btn-danger">Previous</button>
+
+
+            <button class="btn btn-primary float-right">Result</button>
+
+
+        </h5> -->
+    </div>
+</h1>
